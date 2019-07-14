@@ -1,32 +1,20 @@
 #include <stdio.h> 
-  
-int main() 
-{ 
-    int d, i, flag = 1; 
-  
-   
-    scanf("%d", &d); 
-  
-    
-    for (i = 2; i <= sqrt(d) / 2; i++) 
-    { 
-  
-       
-        if (d % i == 0) 
-        { 
-            flag = 0; 
-            break; 
-        } 
-    } 
-  
-    if (flag == 1)
-    { 
-        printf("yes"); 
-    } 
-    else
-    { 
-        printf("no"); 
-    } 
-  
-    return 0; 
-} 
+
+main() {
+  int n, i, c = 0;
+  scanf("%d", &n);
+
+  for (i = 1; i <= n; i++) {
+      if (n % i == 0) {
+         c++;
+      }
+  }
+
+  if (c == 2) {
+  printf("yes");
+  }
+  else {
+  printf("no");
+  }
+  return 0;    
+}
