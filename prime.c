@@ -4,8 +4,6 @@ int main()
 { 
     int d, i, flag = 1; 
   
-    printf("Enter a number: \n"); 
-  
    
     scanf("%d", &d); 
   
