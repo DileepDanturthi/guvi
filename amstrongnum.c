@@ -3,10 +3,12 @@
 int main()
 {
     int number, originalNumber, remainder, result = 0, n = 0 ;
+    printf("Enter an integer: ");
     scanf("%d", &number);
      originalNumber = number;
     if(number<100000)
     {
+    
     while (originalNumber != 0)
     {
         originalNumber /= 10;
@@ -20,9 +22,10 @@ int main()
         originalNumber /= 10;
     }
     if(result == number)
-        printf("yes");
+        printf("%d is an Armstrong number.", number);
     else
-        printf("no");
-    return 0;
+        printf("%d is not an Armstrong number.", number);
     }
+    return 0;
+    
 }
