@@ -2,7 +2,7 @@
     void main()
     {
         int i,j,n,a[100],temp;
-        float median;
+        int median;
         scanf("%d",&n);
         for(i=0;i<n;i++)
         scanf("%d",&a[i]);
