@@ -5,7 +5,7 @@ int main()
     int number, originalNumber, remainder, result = 0, n = 0 ;
     scanf("%d", &number);
      originalNumber = number;
-    if(num<100000)
+    if(number<100000)
     {
     while (originalNumber != 0)
     {
