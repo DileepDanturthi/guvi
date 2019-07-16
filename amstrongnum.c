@@ -3,7 +3,7 @@
 int main()
 {
     int number, originalNumber, remainder, result = 0, n = 0 ;
-    printf("Enter an integer: ");
+   
     scanf("%d", &number);
      originalNumber = number;
     if(number<100000)
@@ -22,9 +22,9 @@ int main()
         originalNumber /= 10;
     }
     if(result == number)
-        printf("%d is an Armstrong number.", number);
+        printf("yes");
     else
-        printf("%d is not an Armstrong number.", number);
+        printf("no");
     }
     return 0;
     
