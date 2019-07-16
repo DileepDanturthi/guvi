@@ -28,6 +28,6 @@
             median = a[n/2];
             
         }
-         printf("%f",median);
+         printf("%d",median);
         
     }
