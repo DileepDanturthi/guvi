@@ -1,22 +1,21 @@
 #include <stdio.h>
 int main()
 {
-    int low, high, i, flag;
-    scanf("%d %d", &low, &high);
-    while (low < high)
+    int l, h, m, flag=0;
+    scanf("%d %d", &l, &h);
+    while (l< h)
     {
-        flag = 0;
-        for(i = 2; i <= low/2; ++i)
+        for(m = 2; m<= l/2; ++m)
         {
-            if(low % i == 0)
+            if(l % m == 0)
             {
-                flag = 1;
+                flag = m;
                 break;
             }
         }
         if (flag == 0)
-            printf("%d ", low);
-        ++low;
+            printf("%d ", l);
+        ++l;
     }
     return 0;
 }
