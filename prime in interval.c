@@ -1,21 +1,30 @@
-#include <stdio.h>
-int main()
-{
-    int l, h, m, flag=0;
-    scanf("%d %d", &l, &h);
-    while (l< h)
-    {
-        for(m = 2; m<= l/2; ++m)
-        {
-            if(l % m == 0)
-            {
-                flag = m;
-                break;
-            }
-        }
-        if (flag == 0)
-            printf("%d ", l);
-        ++l;
-    }
-    return 0;
-}
+#include <stdio.h> 
+  
+int main() 
+{ 
+    
+    int a, b, i, k, flag; 
+    scanf("%d", &a); 
+    scanf("%d", &b); 
+    for (i = a; i <= b; i++) 
+    { 
+        
+        if (i == 1 || i == 0) 
+            continue; 
+ 
+        flag = 1; 
+  
+        for (k = 2; k <= i / 2; ++k)
+        { 
+            if (i % k == 0)
+            { 
+                flag = 0; 
+                break; 
+            } 
+        } 
+        if (flag == 1) 
+            printf("%d ", i); 
+    } 
+  
+    return 0; 
+} 
