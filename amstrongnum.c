@@ -6,7 +6,8 @@ int main()
     printf("Enter an integer: ");
     scanf("%d", &number);
      originalNumber = number;
-    
+    if(num<100000)
+    {
     while (originalNumber != 0)
     {
         originalNumber /= 10;
@@ -24,4 +25,5 @@ int main()
     else
         printf("%d is not an Armstrong number.", number);
     return 0;
+    }
 }
